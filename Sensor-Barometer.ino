@@ -152,7 +152,7 @@ if(count-- <= 0)
  //Serial.print("Pressure: ");
  //Serial.println(actualPressure);
 
-  char buf3[20];
+  char buf3[30];
   sprintf(buf3, "BA-Humidity:%011.6f", humidity);
   client.send(buf3);
   client.monitor();
